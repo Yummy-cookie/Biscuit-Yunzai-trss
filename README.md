@@ -2,7 +2,7 @@
 
 
 # Yunzai-Bot v3
-Yunzai-Bot，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回，此版本根据Yunzai+miao+trss结合组成的Yunzai，并不需要安装miao-plugin
+Yunzai-Bot，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回，此版本根据Yunzai+miao+trss结合组成的Yunzai，并不依赖miao-plugin
 
 项目仅供学习交流使用，严禁用于任何商业用途和非法行为
 
@@ -24,7 +24,7 @@ github
 ```
 cd Yunzai-Bot #进入Yunzai目录
 ```
-2.安装[pnpm]装的可以跳过
+2.安装[pnpm](https://pnpm.io/zh/installation),装的可以跳过
 ```
 npm install pnpm -g
 ```
