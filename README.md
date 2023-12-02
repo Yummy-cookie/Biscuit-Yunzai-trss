@@ -14,15 +14,16 @@ Yunzai-Bot，原神qq群机器人，通过米游社接口，查询原神游戏�
 >环境准备： Windows or Linux，Node.js（[版本至少v16以上](http://nodejs.cn/download/)），[Redis](https://redis.io/docs/getting-started/installation/)
 
 1.克隆项目
+- gitee
 ```
 git clone --depth=1 https://gitee.com/Yummy-cookie/Yunzai-Bot-trss ./Biscuit-Yunzai-TRSS
-#gitee(国内优先)
-
-#git clone --depth=1 https://github.com/Yummy-cookie/Biscuit-Yunzai-trss.git ./Biscuit-Yunzai-TRSS
-github
+```
+- github
+```
+git clone --depth=1 https://github.com/Yummy-cookie/Biscuit-Yunzai-trss.git ./Biscuit-Yunzai-TRSS
 ```
 ```
-cd Biscuit-Yunzai(TRSS) #进入Biscuit-Yunzai目录
+cd Biscuit-Yunzai-TRSS #进入Biscuit-Yunzai目录
 ```
 2.安装[pnpm](https://pnpm.io/zh/installation),装的可以跳过
 ```
