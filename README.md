@@ -139,6 +139,17 @@ ws://localhost:2536/GSUIDCore
 
 6.设置主人：发送 `#设置主人`，后台日志获取验证码并发送
 
+## 致谢
+
+|                           Nickname                            | Contribution     |
+|:-------------------------------------------------------------:|------------------|
+|      [Yunzai v3.0](https://gitee.com/le-niao/Yunzai-Bot)      | 乐神的Yunzai-Bot V3 |
+| [GardenHamster](https://github.com/GardenHamster/GenshinPray) | 模拟抽卡背景素材来源       |
+|      [西风驿站](https://bbs.mihoyo.com/ys/collection/839181)      | 角色攻略图来源          |
+|     [米游社友人A](https://bbs.mihoyo.com/ys/collection/428421)     | 角色突破素材图来源        |
+| [icqq](https://github.com/icqqjs/icqq) | ICQQ             |
+
+
 ## 其他
 - 图片素材来源于网络，仅供交流学习使用
 - 严禁用于任何商业用途和非法行为
