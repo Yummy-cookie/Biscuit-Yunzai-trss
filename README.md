@@ -1,4 +1,4 @@
-[![云崽bot](https://img.shields.io/badge/%E4%BA%91%E5%B4%BD-v3.1.0-black?style=flat-square&logo=dependabot)](https://gitee.com/Yummy-cookie/Yunzai-Bot/) [![Group](https://img.shields.io/badge/群号-950817968-red?style=flat-square&logo=GroupMe&logoColor=white)](https://h5.qun.qq.com/s/hFFOCBqprO) <a href='https://gitee.com/Yummy-cookie/Yunzai-Bot/stargazers'><img src='https://gitee.com/Yummy-cookie/Yunzai-Bot/badge/star.svg?theme=dark' alt='star'></img></a>
+[![云崽bot](https://img.shields.io/badge/%E4%BA%91%E5%B4%BD-v3.1.3-black?style=flat-square&logo=dependabot)](https://gitee.com/Yummy-cookie/Yunzai-Bot/) [![Group](https://img.shields.io/badge/群号-950817968-red?style=flat-square&logo=GroupMe&logoColor=white)](https://h5.qun.qq.com/s/hFFOCBqprO) <a href='https://gitee.com/Yummy-cookie/Yunzai-Bot-trss/stargazers'><img src='https://gitee.com/Yummy-cookie/Yunzai-Bot/badge/star.svg?theme=dark' alt='star'></img></a>
 
 
 # Yunzai-Bot v3
