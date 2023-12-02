@@ -55,7 +55,7 @@ export class MonitorTask extends plugin {
         if (!fs.existsSync(GithubStatic)) fs.writeFileSync(GithubStatic, '{}');
         let GithubStaticJson = JSON.parse(fs.readFileSync(GithubStatic))
         try {
-            const res = await axios.get('https://api.github.com/repos/Yummy-cookie/Yunzai-Bot/commits')
+            const res = await axios.get('https://api.github.com/repos/Yummy-cookie/Yunzai-Bot-trss/commits')
             const data = res.data
             if (!data[0]) return
             let Json = data[0]
@@ -112,7 +112,7 @@ export class MonitorTask extends plugin {
     }
 
     async SelectMonitor(e) {
-        const res = await axios.get('https://api.github.com/repos/Yummy-cookie/Yunzai-Bot/commits')
+        const res = await axios.get('https://api.github.com/repos/Yummy-cookie/Yunzai-Bot-trss/commits')
         const data = res.data
         if (!data[0]) return
         let Json = data[0]
