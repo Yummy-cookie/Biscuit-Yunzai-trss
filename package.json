@@ -47,7 +47,7 @@
     "eslint-plugin-promise": "^6.1.1"
   },
   "imports": {
-    "#yunzai": "./system/components/index.js",
-    "#yunzai.models": "./system/models/index.js"
+      "#yunzai": "./plugins/genshin/system/components/index.js",
+    "#yunzai.models": "./plugins/genshin/system/models/index.js"
   }
 }
