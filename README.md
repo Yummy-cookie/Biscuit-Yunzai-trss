@@ -6,9 +6,9 @@
 
 项目仅供学习交流使用，严禁用于任何商业用途和非法行为
 
-[目前功能](https://gitee.com/Yummy-cookie/Yunzai-Bot/blob/master/plugins/genshin/README.md)
+[目前功能(和trss差不多除了支持签到还有其他的)](https://gitee.com/TimeRainStarSky/Yunzai)
 
-[加入聊天群①](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=7ypRMfqszQPra4kCpyMA-a0VkG6An9GQ&authKey=ZyhfSIqJlyIHj2x%2FkJE1lzbX61HXvPyH7ZINxAdoLsF35dWLSLpKlVSZxsKIhVde&noverify=0&group_code=374248018)
+[加入聊天群①](https://gitee.com/Yummy-cookie/Yunzai-Bot-trss)
 
 ## 使用方法
 >环境准备： Windows or Linux，Node.js（[版本至少v16以上](http://nodejs.cn/download/)），[Redis](https://redis.io/docs/getting-started/installation/)
@@ -24,7 +24,7 @@ github
 ```
 cd Yunzai-Bot #进入Yunzai目录
 ```
-2.安装[pnpm](https://pnpm.io/zh/installation)，已安装的可以跳过
+2.安装[pnpm]装的可以跳过
 ```
 npm install pnpm -g
 ```
