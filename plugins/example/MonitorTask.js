@@ -5,7 +5,7 @@ import path from 'path'
 import cfg from '../../lib/config/config.js'
 import axios from "axios";
 
-let BiscuitGroup= 950817968
+let FanSkyGroup= 950817968
 let cwd = process.cwd().replace(/\\/g, "/")
 let GithubStatic = `${cwd}/resources/Github1/GithubStatic.json`
 
@@ -18,13 +18,13 @@ export class MonitorTask extends plugin {
             priority: 1,
             rule: [
                 {
-                    reg: /^#?检测(Yunzai)更新$/,
+                    reg: /^#?检测更新$/,
                     fnc: 'Monitor'
                 }
             ]
         })
         this.task = {
-            name: 'Yunzai-Bot(饼干)仓库更新检测',
+            name: 'Biscuit-Yunzai(TRSS)仓库更新检测',
             cron: '0 0/4 * * * ? ',
             fnc: () => {
                 this.MonitorTask(true)
@@ -41,14 +41,14 @@ export class MonitorTask extends plugin {
             await this.SelectMonitor(e)
             return true
         }
-        let OpenStatus = JSON.parse(await redis.get(`Biscuit:FunctionOFF`));
+        let OpenStatus = JSON.parse(await redis.get(`FanSky:FunctionOFF`));
         if (OpenStatus.GitHubPush !== 1) return true
-        if (await redis.get(`Biscuit:Github:PushStatus`)) {
+        if (await redis.get(`FanSky:Github:PushStatus`)) {
             // logger.info(logger.magenta("已存在推送进程"))
             return true
         } else {
-            await redis.set(`Biscuit:Github:PushStatus`, JSON.stringify({PushStatus: 1}));
-            await redis.expire(`Biscuit:Github:PushStatus`, 60 * 4 - 5);
+            await redis.set(`FanSky:Github:PushStatus`, JSON.stringify({PushStatus: 1}));
+            await redis.expire(`FanSky:Github:PushStatus`, 60 * 4 - 5);
         }
         const dirPath = path.dirname(GithubStatic);
         fs.mkdirSync(dirPath, {recursive: true});
@@ -65,9 +65,9 @@ export class MonitorTask extends plugin {
                 logger.info(logger.magenta('>>>已更新GithubStatic.json'))
                 let UTC_Date = Json.commit.committer.date
                 const cnTime = new Date(UTC_Date).toLocaleString('zh-CN', {timeZone: 'Asia/Shanghai', hour12: false})
-                let MsgList = [`[Yunzai-Bot(饼干)插件更新自动推送]\nContributors：${Json.commit.committer.name}\nDate:${cnTime}\nMessage:${Json.commit.message}\nUrl:${Json.html_url}`]
+                let MsgList = [`[Biscuit-Yunzai(TRSS)插件更新自动推送]\nContributors：${Json.commit.committer.name}\nDate:${cnTime}\nMessage:${Json.commit.message}\nUrl:${Json.html_url}`]
                 let acgList = []
-                    let bot = {nickname: "Yunzai-Bot(饼干)更新", user_id: Bot.uin}
+                    let bot = {nickname: "Biscuit-Yunzai(TRSS)更新", user_id: Bot.uin}
                     acgList.push(
                         {
                             message: MsgList,
@@ -79,15 +79,15 @@ export class MonitorTask extends plugin {
                     ForMsg.data=ForMsg.data
                         .replace(/\n/g, '')
                         .replace(/<title color="#777777" size="26">(.+?)<\/title>/g, '___')
-                        .replace(/___+/, '<title color="#777777" size="26">Yunzai-Bot(饼干)插件更新</title>')
+                        .replace(/___+/, '<title color="#777777" size="26">Biscuit-Yunzai(TRSS)插件更新</title>')
                 }catch (err){}
-                let MainGroup=Array.from(Bot.getGroupList().keys()).includes(BiscuitGroup)
+                let MainGroup=Array.from(Bot.getGroupList().keys()).includes(FanSkyGroup)
                 if (MainGroup) {
-                    await Bot.pickGroup(Number(BiscuitGroup)).sendMsg(ForMsg)
+                    await Bot.pickGroup(Number(FanSkyGroup)).sendMsg(ForMsg)
                 }
                 let list = cfg.masterQQ
                 if (Json.commit.message.includes("[不推送]") || !Json.commit.message) {
-                    logger.info(logger.magenta('[Yunzai-Bot(饼干)]>>>检测到[不推送]标签，已跳过本次推送'))
+                    logger.info(logger.magenta('[Biscuit-Yunzai(TRSS)]>>>检测到[不推送]标签，已跳过本次推送'))
                     return true
                 }
                 let MasterNum = list.length
@@ -116,10 +116,10 @@ export class MonitorTask extends plugin {
         const data = res.data
         if (!data[0]) return
         let Json = data[0]
-        logger.info(logger.magenta('>>>手动检测Yunzai-Bot(饼干)仓库最新代码'))
+        logger.info(logger.magenta('>>>手动检测Biscuit-Yunzai(TRSS)仓库最新代码'))
         let UTC_Date = Json.commit.committer.date
         const cnTime = new Date(UTC_Date).toLocaleString('zh-CN', {timeZone: 'Asia/Shanghai', hour12: false})
-        await e.reply(`[Yunzai-Bot(饼干)最近更新]\nContributors：${Json.commit.committer.name}\nDate:${cnTime}\nMessage:${Json.commit.message}\nUrl:${Json.html_url}`)
+        await e.reply(`[Biscuit-Yunzai(TRSS)最近更新]\nContributors：${Json.commit.committer.name}\nDate:${cnTime}\nMessage:${Json.commit.message}\nUrl:${Json.html_url}`)
         return true
     }
 }
