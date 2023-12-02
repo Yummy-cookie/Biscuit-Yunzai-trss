@@ -151,6 +151,16 @@ ws://localhost:2536/GSUIDCore
 |     [米游社友人A](https://bbs.mihoyo.com/ys/collection/428421)     | 角色突破素材图来源        |
 | [icqq](https://github.com/icqqjs/icqq) | ICQQ             |
 
+## 常见问题
+# puppeteer 相关问题
+- 发不出图片
+```
+pnpm install puppeteer@19.0.0 -w
+```
+```
+node ./node_modules/puppeteer/install.js
+```
+- 其他的自行探索
 
 ## 其他
 - 图片素材来源于网络，仅供交流学习使用
