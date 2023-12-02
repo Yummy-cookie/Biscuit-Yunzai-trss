@@ -15,10 +15,10 @@ Yunzai-Bot，原神qq群机器人，通过米游社接口，查询原神游戏�
 
 1.克隆项目
 ```
-git clone --depth=1 https://gitee.com/Yummy-cookie/Yunzai-Bot-trss ./Biscuit-Yunzai(TRSS)
+git clone --depth=1 https://gitee.com/Yummy-cookie/Yunzai-Bot-trss ./Biscuit-Yunzai-TRSS
 #gitee(国内优先)
 
-#git clone --depth=1 https://github.com/Yummy-cookie/Biscuit-Yunzai-trss.git ./Biscuit-Yunzai(TRSS)
+#git clone --depth=1 https://github.com/Yummy-cookie/Biscuit-Yunzai-trss.git ./Biscuit-Yunzai-TRSS
 github
 ```
 ```
