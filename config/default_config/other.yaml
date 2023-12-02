@@ -2,9 +2,12 @@
 autoFriend: 1
 # 是否自动退群人数，当被好友拉进群时，群人数小于配置值自动退出， 默认50，0则不处理
 autoQuit: 50
-# 主人QQ号
+# 主人帐号
 masterQQ:
-
+  - "stdin"
+# Bot账号:主人帐号
+master:
+  - "stdin:stdin"
 
 # 禁用私聊功能 true：私聊只接受ck以及抽卡链接（Bot主人不受限制），false：私聊可以触发全部指令，默认false
 disablePrivate: false
@@ -19,6 +22,6 @@ whiteGroup:
 #黑名单群
 blackGroup:
   - 213938015
-#黑名单qq
+#黑名单账号
 blackQQ:
   - 528952540
