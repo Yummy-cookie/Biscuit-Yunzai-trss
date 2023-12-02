@@ -1,0 +1,10 @@
+# 配置在下次启动时生效
+
+# 启用标准输入
+stdin: true
+
+# 加载适配器，标准输入无视该项
+adapter: true
+
+# 日志颜色
+color: true
